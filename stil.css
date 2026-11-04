@@ -64,7 +64,14 @@ a { color: inherit; }
   font-family: var(--baslik); font-weight: 500; font-size: 13px;
   letter-spacing: .06em; text-transform: uppercase;
 }
-.kunye-ust { border-bottom: 1px solid var(--cizgi); padding-bottom: 6px; }
+.kunye-ust {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+  border-bottom: 1px solid var(--cizgi); padding-bottom: 6px;
+}
+.k-sol { text-align: left; }
+.k-sag { text-align: right; }
+.k-tarih { text-decoration: none; border-bottom: 1px dotted currentColor; }
+.k-tarih:hover { color: var(--kirmizi); }
 .kunye-alt { border-top: 1px solid var(--cizgi); padding-top: 6px; }
 .slogan { color: var(--kirmizi); }
 .ad {
@@ -88,7 +95,20 @@ a { color: inherit; }
 }
 .hucre { flex: 1 1 96px; padding: 5px 12px; border-left: 1px solid rgba(0,0,0,.25); display: flex; flex-direction: column; }
 .p-ad { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--soluk); }
-.p-deger { font-size: 19px; font-weight: 700; }
+.p-deger { font-size: 19px; font-weight: 700; white-space: nowrap; }
+.p-degisim { font-size: 12px; color: var(--soluk); }
+.p-degisim.artis { color: #2f6b2a; }
+.p-degisim.dusus { color: var(--kirmizi); }
+.p-not { margin: -8px 0 14px; font-size: 11px; color: var(--soluk); text-align: right; font-family: var(--baslik); letter-spacing: .03em; }
+
+.gezinti {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--cizgi);
+  font-family: var(--baslik); text-transform: uppercase; letter-spacing: .06em; font-size: 14px;
+}
+.gezinti a { text-decoration: none; }
+.gezinti a:hover { color: var(--kirmizi); }
+.gezinti > :last-child { text-align: right; }
 
 /* Manşet */
 .manset { text-align: center; padding: 6px 0 12px; border-bottom: 1px solid var(--cizgi); }
@@ -201,6 +221,11 @@ p { margin: 0 0 .8em; text-align: justify; hyphens: auto; }
   body { font-size: 16px; }
   .kagit { padding: 12px 16px 24px; }
   .kunye-ust, .kunye-alt { font-size: 11px; justify-content: center; }
+  .kunye-ust { grid-template-columns: 1fr 1fr; row-gap: 4px; }
+  .k-tarih { grid-column: 1 / -1; grid-row: 1; justify-self: center; font-size: 13px; }
+  .k-sol, .k-sag { white-space: nowrap; font-size: 10px; }
+  .p-not { text-align: left; margin-top: -10px; }
+  .gezinti { font-size: 12px; }
   .on-sayfa, .alt-bant, .haberler { grid-template-columns: 1fr; }
   .manset-metin, .hava { padding-right: 0; border-right: 0; }
   .kose, .yan { padding-left: 0; }

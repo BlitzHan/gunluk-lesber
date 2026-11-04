@@ -72,9 +72,9 @@ def kunye(s: dict) -> str:
     return f"""
 <header class="kunye">
   <div class="kunye-ust">
-    <span>Yıl 1 · Sayı {e(s["sayi"])}</span>
-    <span>{e(uzun_tarih(s["tarih"]))}</span>
-    <span>Ücretsizdir · Sponsoru yoktur</span>
+    <span class="k-sol">Yıl 1 · Sayı {e(s["sayi"])}</span>
+    <a class="k-tarih" href="{{kok}}arsiv.html" title="Eski sayılar">{e(uzun_tarih(s["tarih"]))}</a>
+    <span class="k-sag">Ücretsizdir · Sponsoru yoktur</span>
   </div>
   <h1 class="ad"><a href="{{kok}}index.html">Günlük Leşber</a></h1>
   <div class="kunye-alt">
@@ -89,9 +89,16 @@ def piyasa(s: dict) -> str:
         return ""
     hucreler = "".join(
         f'<div class="hucre"><span class="p-ad">{e(p["ad"])}</span>'
-        f'<span class="p-deger">{e(p["deger"])}</span></div>'
+        f'<span class="p-deger">{e(p["deger"])}</span>'
+        f'<span class="p-degisim {yon(p.get("degisim", ""))}">{e(p.get("degisim", ""))}</span></div>'
         for p in s["piyasa"])
-    return f'<section class="piyasa" aria-label="Piyasa"><div class="p-baslik">Piyasa</div>{hucreler}</section>'
+    not_ = f'<p class="p-not">{e(s["piyasa_not"])}</p>' if s.get("piyasa_not") else ""
+    return (f'<section class="piyasa" aria-label="Piyasa"><div class="p-baslik">Piyasa</div>{hucreler}</section>'
+            f'{not_}')
+
+
+def yon(degisim: str) -> str:
+    return "artis" if degisim.startswith("▲") else "dusus" if degisim.startswith("▼") else ""
 
 
 def manset(s: dict) -> str:
@@ -156,6 +163,13 @@ def alt_bant(s: dict) -> str:
 </section>"""
 
 
+def gezinti(s: dict) -> str:
+    onceki, sonraki = s.get("_onceki"), s.get("_sonraki")
+    sol = f'<a href="{{kok}}sayi/{e(onceki)}.html">‹ Önceki sayı</a>' if onceki else "<span></span>"
+    sag = f'<a href="{{kok}}sayi/{e(sonraki)}.html">Sonraki sayı ›</a>' if sonraki else "<span></span>"
+    return f'<nav class="gezinti">{sol}<a href="{{kok}}arsiv.html">Eski sayılar</a>{sag}</nav>'
+
+
 def dip(s: dict) -> str:
     videolar = " · ".join(
         f'<a href="{e(video_linki(v["id"]))}" target="_blank" rel="noopener">{e(v["baslik"])}</a> ({e(v.get("sure", ""))})'
@@ -165,7 +179,6 @@ def dip(s: dict) -> str:
   <p><strong>Kaynak:</strong> {videolar}</p>
   <p>Bu gazete <a href="{KANAL}" target="_blank" rel="noopener">Cihat E. Çiçek</a>'in canlı yayınından otomatik derlenmiştir; resmî değildir.
   Yazılanlar yayında söylenenlerdir; altyazıdan çıkarıldığı için rakamlarda hata olabilir, emin olmak için videoya bakın. Yatırım tavsiyesi değildir.</p>
-  <p><a href="{{kok}}arsiv.html">Eski sayılar</a></p>
 </footer>"""
 
 
@@ -221,7 +234,7 @@ def sayfa(baslik: str, govde: str, kok: str) -> str:
 
 
 def sayi_sayfasi(s: dict, kok: str) -> str:
-    govde = kunye(s) + piyasa(s) + manset(s) + haberler(s) + alt_bant(s) + dip(s)
+    govde = kunye(s) + piyasa(s) + manset(s) + haberler(s) + alt_bant(s) + gezinti(s) + dip(s)
     return sayfa(f"Günlük Leşber · {uzun_tarih(s['tarih'])}", govde, kok)
 
 
@@ -243,6 +256,8 @@ def main() -> int:
     sayilar.sort(key=lambda s: s["tarih"])
     for no, s in enumerate(sayilar, 1):
         s["sayi"] = no  # sayı numarası tarih sırasından gelir
+        s["_onceki"] = sayilar[no - 2]["tarih"] if no > 1 else None
+        s["_sonraki"] = sayilar[no]["tarih"] if no < len(sayilar) else None
     sayilar.reverse()
     (KOK / "sayi").mkdir(exist_ok=True)
     for s in sayilar:

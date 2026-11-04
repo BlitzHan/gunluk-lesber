@@ -41,7 +41,7 @@ def saniye(zaman: str) -> int:
 
 def metinleri_gez(dugum, yol=""):
     """JSON içindeki okunacak metinleri (yol, metin) olarak verir."""
-    atla = {"id", "video", "zaman", "tarih", "sure", "videolar"}
+    atla = {"id", "video", "zaman", "tarih", "sure", "videolar", "piyasa", "piyasa_not"}
     if isinstance(dugum, dict):
         for k, v in dugum.items():
             if k not in atla:

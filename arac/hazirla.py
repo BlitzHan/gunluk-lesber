@@ -87,6 +87,8 @@ def altyazi_cek(video: dict) -> dict:
         return video
     metin = HAM / f"{video['id']}.txt"
     metin.write_text(temizle(str(vtt)), encoding="utf-8")
+    for ham in HAM.glob(f"{video['id']}*.vtt"):  # düz metin yeterli; büyük VTT'yi tutma
+        ham.unlink()
     video["hazir"] = True
     video["metin"] = str(metin)
     return video
@@ -99,6 +101,10 @@ def main() -> int:
     simdi = datetime.now(TZ)
 
     calistir(["git", "-C", str(KOK), "pull", "-q", "--ff-only"], 120)
+    sinir = simdi.timestamp() - 14 * 86400  # 14 günden eski altyazıları sil
+    for f in HAM.glob("*") if HAM.exists() else []:
+        if f.is_file() and f.stat().st_mtime < sinir:
+            f.unlink()
     calistir(["yt-dlp", "-U"], 180)  # YouTube değişikliklerine karşı her gün güncelle
 
     videolar = bugunun_videolari(tarih)

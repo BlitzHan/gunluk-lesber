@@ -9,12 +9,41 @@
     }
   ],
   "piyasa": [
-    { "ad": "Gram altın", "deger": "6.400+ TL", "zaman": "28:26" },
-    { "ad": "Ons altın", "deger": "3.984 $", "zaman": "28:26" },
-    { "ad": "Ons gümüş", "deger": "50,74 $", "zaman": "28:58" },
-    { "ad": "Gram gümüş", "deger": "≈85 TL", "zaman": "28:58" },
-    { "ad": "Dolar", "deger": "50,16 TL", "zaman": "28:26" },
-    { "ad": "Brent", "deger": "102 $", "zaman": "21:47" }
+    {
+      "ad": "Ons altın",
+      "deger": "4.055 $",
+      "degisim": "▲ %2,9"
+    },
+    {
+      "ad": "Gram altın",
+      "deger": "6.520 TL",
+      "degisim": "▲ %3,0"
+    },
+    {
+      "ad": "Ons gümüş",
+      "deger": "52,12 $",
+      "degisim": "▲ %5,1"
+    },
+    {
+      "ad": "Gram gümüş",
+      "deger": "83,82 TL",
+      "degisim": "▲ %5,2"
+    },
+    {
+      "ad": "Dolar",
+      "deger": "50,02 TL",
+      "degisim": "▲ %0,1"
+    },
+    {
+      "ad": "Brent petrol",
+      "deger": "102,13 $",
+      "degisim": "▼ %1,4"
+    },
+    {
+      "ad": "Bitcoin",
+      "deger": "78.444 $",
+      "degisim": "▲ %1,4"
+    }
   ],
   "manset": {
     "video": "lp5Jf3R4cMM",
@@ -120,12 +149,36 @@
     }
   ],
   "kisa": [
-    { "video": "lp5Jf3R4cMM", "zaman": "21:47", "metin": "Brent petrol 110 dolardan 102 dolara geriledi. \"Balayı saatleri, sonra fiyatlar yavaş yavaş oturur.\"" },
-    { "video": "lp5Jf3R4cMM", "zaman": "33:35", "metin": "ABD'de açık iş sayısı 7,5 milyon geldi, beklenti 7,15 milyondu. Çiçek'e göre olumsuz: İş var ama kimse 3 kuruşa çalışmak istemiyor." },
-    { "video": "lp5Jf3R4cMM", "zaman": "20:47", "metin": "ABD'nin borcu 41 trilyon dolara gidiyor. \"Kurtaracak yönü de kalmadı.\"" },
-    { "video": "lp5Jf3R4cMM", "zaman": "08:20", "metin": "Çiçek'in aktardığı iddiaya göre Putin, Trump'a \"İran'a nükleer atarsanız ben de Ukrayna'ya atarım\" dedi. İsrail şimdi kimyasal silah bahanesine sarıldı; Çiçek Irak'ı hatırlatıyor." },
-    { "video": "lp5Jf3R4cMM", "zaman": "09:20", "metin": "ABD'de ilk kez bazı eyaletlerde Müslüman belediye başkanları seçiliyor; ilk Müslüman senatör ihtimali doğdu." },
-    { "video": "lp5Jf3R4cMM", "zaman": "01:36", "metin": "Günün kıyafeti: Seçim şerefine New York, Ramones. \"Yarın kırmızıyı giyeceğiz.\"" }
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "21:47",
+      "metin": "Brent petrol 110 dolardan 102 dolara geriledi. \"Balayı saatleri, sonra fiyatlar yavaş yavaş oturur.\""
+    },
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "33:35",
+      "metin": "ABD'de açık iş sayısı 7,5 milyon geldi, beklenti 7,15 milyondu. Çiçek'e göre olumsuz: İş var ama kimse 3 kuruşa çalışmak istemiyor."
+    },
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "20:47",
+      "metin": "ABD'nin borcu 41 trilyon dolara gidiyor. \"Kurtaracak yönü de kalmadı.\""
+    },
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "08:20",
+      "metin": "Çiçek'in aktardığı iddiaya göre Putin, Trump'a \"İran'a nükleer atarsanız ben de Ukrayna'ya atarım\" dedi. İsrail şimdi kimyasal silah bahanesine sarıldı; Çiçek Irak'ı hatırlatıyor."
+    },
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "09:20",
+      "metin": "ABD'de ilk kez bazı eyaletlerde Müslüman belediye başkanları seçiliyor; ilk Müslüman senatör ihtimali doğdu."
+    },
+    {
+      "video": "lp5Jf3R4cMM",
+      "zaman": "01:36",
+      "metin": "Günün kıyafeti: Seçim şerefine New York, Ramones. \"Yarın kırmızıyı giyeceğiz.\""
+    }
   ],
   "soz": {
     "video": "lp5Jf3R4cMM",
@@ -138,5 +191,6 @@
     "baslik": "Tutumlu Kedi Firida",
     "metin": "Efsane Kasım'da 99,47 TL. 500 liralık alışverişe kargo bedava.",
     "not": "Ben sponsor değilim. \"Kimseden para almıyorum ki.\""
-  }
+  },
+  "piyasa_not": "Yahoo Finance, saat 13:23. Gram fiyatlar ons ve dolar kurundan hesaplanır; değişim önceki güne göre."
 }

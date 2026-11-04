@@ -29,6 +29,12 @@ def main() -> int:
         print(f"Dosya yok: {sayi}")
         return 1
 
+    git("pull", "-q", "--ff-only")
+    piyasa = subprocess.run([sys.executable, str(KOK / "arac" / "piyasa.py"), str(sayi)],
+                            capture_output=True, text=True)
+    if piyasa.returncode != 0:  # piyasa verisi gelmezse sayı yine çıkar, bant boş kalır
+        print("UYARI: piyasa verisi alınamadı: " + piyasa.stderr.strip()[-300:])
+
     kontrol = subprocess.run([sys.executable, str(KOK / "arac" / "kontrol.py"), str(sayi)],
                              capture_output=True, text=True)
     if kontrol.returncode != 0:

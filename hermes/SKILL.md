@@ -59,7 +59,7 @@ Yayınlanamadıysa ilk satıra `[CRON_FAILURE]` koy ve kısa sebebi yaz.
   Her haberde ve manşette en az bir doğrudan alıntı (tırnak içinde onun sözü) olsun; tadı alıntılardan gelir.
 - **Başlıklar** cümle düzeninde yazılır ("Altın 4.000 dolara dayandı"), her kelime büyük harfle başlamaz.
 - **Alan değerine etiket yazma:** `ust` alanına "Sürmanşet:" gibi bir şey ekleme, yalnız metni yaz.
-- **Piyasa değerleri birimli olsun:** "50,74 $", "6.400+ TL", "≈85 TL". Birimini bilmediğin değeri yazma.
+- **Rakamlara birim yaz:** "50,74 dolar", "6.400 lira". Birimini bilmediğin rakamı yazma.
 - **Köşe** en az 3 paragraf ve 150 kelime: o günkü kişisel anlatısından (hedefleri, alışkanlıkları, anıları, kedileri),
   onun ağzından. Yayında kişisel bir şey yoksa en uzun kendi yorum bölümünü birinci şahıs derle.
 - **Yatırım tavsiyesi verme.** Altın, fon, borsa görüşleri "Çiçek'e göre" diye aktarılır.
@@ -76,9 +76,6 @@ Bütün metinler Türkçe. `zaman` o konunun videoda başladığı an (`dk:sn` y
   "tarih": "2026-11-04",
   "sayi": 1,
   "videolar": [{"id": "...", "baslik": "...", "sure": "37:20"}],
-  "piyasa": [
-    {"ad": "Gram altın", "deger": "6.400+ TL", "video": "...", "zaman": "28:26"}
-  ],
   "manset": {
     "video": "...", "zaman": "02:06",
     "ust": "3-6 kelimelik üst başlık",
@@ -103,7 +100,8 @@ Bütün metinler Türkçe. `zaman` o konunun videoda başladığı an (`dk:sn` y
 
 - `haberler`: 5-8 haber, en önemlisi başta (ilk haber geniş basılır). Manşetteki konuyu tekrar etme.
 - `kisa` ("Hava Hadisleri" kutusu): 4-8 madde, haber olmaya yetmeyen konular.
-- `piyasa`: Yalnız yayında okuduğu fiyatlar (altın, gümüş, dolar, petrol vb.). Okumadıysa alanı boş liste yap.
+- `piyasa` alanını **yazma**: bant (ons/gram altın, ons/gram gümüş, dolar, Brent, Bitcoin) yayınlarken betik tarafından
+  gerçek fiyatlarla doldurulur. Yayında okuduğu fiyatlar haber metninde geçebilir.
 - `ilan`: Yalnız kendisi bir şey tanıtırsa (ör. kendi kitabı). Yoksa alanı hiç yazma.
 - Kategori örnekleri: Altın · Gümüş, Borsa, Para piyasası, Enflasyon, Dünya, Siyaset, Lüzumsuz işler ekonomisi.
 

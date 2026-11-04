@@ -2,11 +2,53 @@
   "tarih": "2026-11-03",
   "sayi": 1,
   "videolar": [
-    {"id": "-KCsVz-fTkg", "baslik": "Altın 4000 Altında Tetik, Trump İrrezil Tahminleri Tutacak mı? İstanbul Finans Merkezine Şimşek", "sure": "10:27"},
-    {"id": "MwEdaFwuxBE", "baslik": "03 Kasım 2026 BÖLÜM 2", "sure": "21:31"}
+    {
+      "id": "-KCsVz-fTkg",
+      "baslik": "Altın 4000 Altında Tetik, Trump İrrezil Tahminleri Tutacak mı? İstanbul Finans Merkezine Şimşek",
+      "sure": "10:27"
+    },
+    {
+      "id": "MwEdaFwuxBE",
+      "baslik": "03 Kasım 2026 BÖLÜM 2",
+      "sure": "21:31"
+    }
   ],
   "piyasa": [
-    {"ad": "Otogaz", "deger": "50 TL", "video": "-KCsVz-fTkg", "zaman": "09:58"}
+    {
+      "ad": "Ons altın",
+      "deger": "3.940 $",
+      "degisim": "▼ %0,7"
+    },
+    {
+      "ad": "Gram altın",
+      "deger": "6.333 TL",
+      "degisim": "▼ %0,7"
+    },
+    {
+      "ad": "Ons gümüş",
+      "deger": "49,59 $",
+      "degisim": "▼ %2,2"
+    },
+    {
+      "ad": "Gram gümüş",
+      "deger": "79,69 TL",
+      "degisim": "▼ %2,2"
+    },
+    {
+      "ad": "Dolar",
+      "deger": "49,99 TL",
+      "degisim": "• %0,0"
+    },
+    {
+      "ad": "Brent petrol",
+      "deger": "103,60 $",
+      "degisim": "▼ %1,1"
+    },
+    {
+      "ad": "Bitcoin",
+      "deger": "77.345 $",
+      "degisim": "▲ %0,9"
+    }
   ],
   "manset": {
     "video": "-KCsVz-fTkg",
@@ -32,57 +74,114 @@
     ]
   },
   "haberler": [
-    {"video": "-KCsVz-fTkg", "zaman": "00:34", "kategori": "Dünya",
-     "baslik": "Avrupa marketlerinde soğutucular ters tepti",
-     "spot": "Çiçek'in aktardığına göre birçok ülkede süpermarket soğutucuları arıza yaptı.",
-     "metin": [
-       "Çiçek'in aktardığına göre Avrupa'da birçok ülkede süpermarket buzdolapları +5 dereceye, derin dondurucular yaz sıcağına yakın dereceye çıkmış; uzaktan kumandalı sistemler yüzünden gıdalar çöpe gitmiş. \"Tevekkel değil adamlar işte\" diyerek konuyu ciddiye aldı.",
-       "Çiçek, evde en az 72 saatlik yiyecek ve su bulundurulmasının uyarıldığını da hatırlattı."
-     ]},
-    {"video": "-KCsVz-fTkg", "zaman": "09:58", "kategori": "Enflasyon",
-     "baslik": "Otogaza 9 liralık zam geldi",
-     "spot": "Otogaz 41 liradan 50 liraya çıktı.",
-     "metin": [
-       "Dün otogaza 9 liralık zam geldi; fiyat 41 liradan 50 liraya yükseldi. Çiçek'in aktardığına göre 12 kiloluk tüpün 800 lirayı aşacağı konuşuluyor.",
-       "Tüplü araçlara değinen Çiçek, \"Zaten onun üç katı yakıyor\" dedi ve hesabın çoğu araç için aynı çıktığını söyledi."
-     ]},
-    {"video": "MwEdaFwuxBE", "zaman": "04:37", "kategori": "Para piyasası",
-     "baslik": "Devlet tahvili faizi %33'e fırladı",
-     "spot": "10 yıllık tahvil faizi 2026 Mayıs'ından bu yana en yüksek seviyede.",
-     "metin": [
-       "Çiçek'in aktardığına göre Türkiye'nin 10 yıllık devlet tahvili faizi dün %33'e çıktı. Bu, 2026 Mayıs'ından bu yana görülen en yüksek seviye.",
-       "Çiçek, \"33 rakamına zaten kulağınız alışık değil mi?\" diyerek faiz oranının enflasyonla başa baş olduğunu hatırlattı."
-     ]},
-    {"video": "MwEdaFwuxBE", "zaman": "05:09", "kategori": "Sanayi",
-     "baslik": "Tekstilde icra satışları 67,3 milyar lirayı buldu",
-     "spot": "Perdeden pantolona, çoraptan iç çamaşırına kadar onlarca ürün icradan satılıyor.",
-     "metin": [
-       "Çiçek'in aktardığına göre icra dairelerinin satış ilanları, tekstil ve hazır giyim sektörünün yaşadığı darbeyi gösteriyor. Toplam icradan satış 67,3 milyar lira.",
-       "Çiçek, sektör için \"icra bol olur o sektörlerde\" diyerek daha önce de uyardığını hatırlattı."
-     ]},
-    {"video": "MwEdaFwuxBE", "zaman": "19:50", "kategori": "İflas",
-     "baslik": "Konkordato ve iflaslar rekora koşuyor",
-     "spot": "Konkordato sürecindeki 249 dosyaya iflas verildi.",
-     "metin": [
-       "Çiçek'in aktardığına göre Türkiye'de konkordato sürecindeki 249 dosyaya iflas verildi. Konkordato ve iflasların tarihi rekora gittiği söyleniyor.",
-       "Çiçek bu tabloyu özetlerken \"dört bir yandan Türkiye yumruk yiyor arkadaşlar\" dedi."
-     ]},
-    {"video": "MwEdaFwuxBE", "zaman": "09:25", "kategori": "Dünya",
-     "baslik": "Kanada'da ev fiyatları sert düştü",
-     "spot": "Ev fiyatları 2008 Amerikan krizinden bu yana en büyük düşüşünü yaşıyor.",
-     "metin": [
-       "Çiçek'in aktardığına göre Kanada'da ev fiyatları 2008 Amerikan krizinden bu yana en sert düşüşünü yaşıyor. Zirveden bu yana değerlerin önemli bölümü eridi.",
-       "Çiçek, Kanada'nın nüfusa göre çok geniş bir ülke olduğunu anlatırken fiyatların \"dengeleniyor\" dedi."
-     ]}
+    {
+      "video": "-KCsVz-fTkg",
+      "zaman": "00:34",
+      "kategori": "Dünya",
+      "baslik": "Avrupa marketlerinde soğutucular ters tepti",
+      "spot": "Çiçek'in aktardığına göre birçok ülkede süpermarket soğutucuları arıza yaptı.",
+      "metin": [
+        "Çiçek'in aktardığına göre Avrupa'da birçok ülkede süpermarket buzdolapları +5 dereceye, derin dondurucular yaz sıcağına yakın dereceye çıkmış; uzaktan kumandalı sistemler yüzünden gıdalar çöpe gitmiş. \"Tevekkel değil adamlar işte\" diyerek konuyu ciddiye aldı.",
+        "Çiçek, evde en az 72 saatlik yiyecek ve su bulundurulmasının uyarıldığını da hatırlattı."
+      ]
+    },
+    {
+      "video": "-KCsVz-fTkg",
+      "zaman": "09:58",
+      "kategori": "Enflasyon",
+      "baslik": "Otogaza 9 liralık zam geldi",
+      "spot": "Otogaz 41 liradan 50 liraya çıktı.",
+      "metin": [
+        "Dün otogaza 9 liralık zam geldi; fiyat 41 liradan 50 liraya yükseldi. Çiçek'in aktardığına göre 12 kiloluk tüpün 800 lirayı aşacağı konuşuluyor.",
+        "Tüplü araçlara değinen Çiçek, \"Zaten onun üç katı yakıyor\" dedi ve hesabın çoğu araç için aynı çıktığını söyledi."
+      ]
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "04:37",
+      "kategori": "Para piyasası",
+      "baslik": "Devlet tahvili faizi %33'e fırladı",
+      "spot": "10 yıllık tahvil faizi 2026 Mayıs'ından bu yana en yüksek seviyede.",
+      "metin": [
+        "Çiçek'in aktardığına göre Türkiye'nin 10 yıllık devlet tahvili faizi dün %33'e çıktı. Bu, 2026 Mayıs'ından bu yana görülen en yüksek seviye.",
+        "Çiçek, \"33 rakamına zaten kulağınız alışık değil mi?\" diyerek faiz oranının enflasyonla başa baş olduğunu hatırlattı."
+      ]
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "05:09",
+      "kategori": "Sanayi",
+      "baslik": "Tekstilde icra satışları 67,3 milyar lirayı buldu",
+      "spot": "Perdeden pantolona, çoraptan iç çamaşırına kadar onlarca ürün icradan satılıyor.",
+      "metin": [
+        "Çiçek'in aktardığına göre icra dairelerinin satış ilanları, tekstil ve hazır giyim sektörünün yaşadığı darbeyi gösteriyor. Toplam icradan satış 67,3 milyar lira.",
+        "Çiçek, sektör için \"icra bol olur o sektörlerde\" diyerek daha önce de uyardığını hatırlattı."
+      ]
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "19:50",
+      "kategori": "İflas",
+      "baslik": "Konkordato ve iflaslar rekora koşuyor",
+      "spot": "Konkordato sürecindeki 249 dosyaya iflas verildi.",
+      "metin": [
+        "Çiçek'in aktardığına göre Türkiye'de konkordato sürecindeki 249 dosyaya iflas verildi. Konkordato ve iflasların tarihi rekora gittiği söyleniyor.",
+        "Çiçek bu tabloyu özetlerken \"dört bir yandan Türkiye yumruk yiyor arkadaşlar\" dedi."
+      ]
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "09:25",
+      "kategori": "Dünya",
+      "baslik": "Kanada'da ev fiyatları sert düştü",
+      "spot": "Ev fiyatları 2008 Amerikan krizinden bu yana en büyük düşüşünü yaşıyor.",
+      "metin": [
+        "Çiçek'in aktardığına göre Kanada'da ev fiyatları 2008 Amerikan krizinden bu yana en sert düşüşünü yaşıyor. Zirveden bu yana değerlerin önemli bölümü eridi.",
+        "Çiçek, Kanada'nın nüfusa göre çok geniş bir ülke olduğunu anlatırken fiyatların \"dengeleniyor\" dedi."
+      ]
+    }
   ],
   "kisa": [
-    {"video": "-KCsVz-fTkg", "zaman": "08:27", "metin": "Çiçek'in aktardığına göre İstanbul'da 300'e yakın yıldırım düştü, bunlardan biri İstanbul Finans Merkezi'ne isabet etti. Çiçek: \"İkisi aynı şey ama biri sesi biri kendisi ışığı.\""},
-    {"video": "-KCsVz-fTkg", "zaman": "02:10", "metin": "Kaliforniya'da dün gece 260 deprem oldu. Çiçek bunu \"deprem fırtınası\" diye anlattı."},
-    {"video": "MwEdaFwuxBE", "zaman": "09:25", "metin": "Belçika'da hükümet düştü; başbakan istifasını Kral Filip'e sundu."},
-    {"video": "MwEdaFwuxBE", "zaman": "12:04", "metin": "Kırtasiyeciler üç zarf yetiştiremiyor. Çiçek: \"Üç zarf yüzünden zarf kalmadı.\""},
-    {"video": "MwEdaFwuxBE", "zaman": "02:03", "metin": "Kore borsası \"ölüm haçı\"na girdi; 50 günlük ortalama 200 günlüğün altına indi."},
-    {"video": "MwEdaFwuxBE", "zaman": "07:48", "metin": "Amerika'da teknoloji hisseleri sert düştü: Nvidia'da %11'e yakın, Meta'da %16, Google'da %19 kayıp."},
-    {"video": "MwEdaFwuxBE", "zaman": "00:32", "metin": "30 yıl önce yola çıkan İngiliz, yaklaşık 50.000 kilometre yürüyüp İngiltere'deki evine, annesinin yanına döndü."}
+    {
+      "video": "-KCsVz-fTkg",
+      "zaman": "08:27",
+      "metin": "Çiçek'in aktardığına göre İstanbul'da 300'e yakın yıldırım düştü, bunlardan biri İstanbul Finans Merkezi'ne isabet etti. Çiçek: \"İkisi aynı şey ama biri sesi biri kendisi ışığı.\""
+    },
+    {
+      "video": "-KCsVz-fTkg",
+      "zaman": "02:10",
+      "metin": "Kaliforniya'da dün gece 260 deprem oldu. Çiçek bunu \"deprem fırtınası\" diye anlattı."
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "09:25",
+      "metin": "Belçika'da hükümet düştü; başbakan istifasını Kral Filip'e sundu."
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "12:04",
+      "metin": "Kırtasiyeciler üç zarf yetiştiremiyor. Çiçek: \"Üç zarf yüzünden zarf kalmadı.\""
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "02:03",
+      "metin": "Kore borsası \"ölüm haçı\"na girdi; 50 günlük ortalama 200 günlüğün altına indi."
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "07:48",
+      "metin": "Amerika'da teknoloji hisseleri sert düştü: Nvidia'da %11'e yakın, Meta'da %16, Google'da %19 kayıp."
+    },
+    {
+      "video": "MwEdaFwuxBE",
+      "zaman": "00:32",
+      "metin": "30 yıl önce yola çıkan İngiliz, yaklaşık 50.000 kilometre yürüyüp İngiltere'deki evine, annesinin yanına döndü."
+    }
   ],
-  "soz": {"video": "-KCsVz-fTkg", "zaman": "08:27", "metin": "Murphy'nin kuralı var. Bir yerin başına çok iş gelecekse hepsi aynı anda gelir."}
+  "soz": {
+    "video": "-KCsVz-fTkg",
+    "zaman": "08:27",
+    "metin": "Murphy'nin kuralı var. Bir yerin başına çok iş gelecekse hepsi aynı anda gelir."
+  },
+  "piyasa_not": "Yahoo Finance, günün kapanışı. Gram fiyatlar ons ve dolar kurundan hesaplanır; değişim önceki güne göre."
 }
