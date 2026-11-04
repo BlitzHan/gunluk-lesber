@@ -240,7 +240,10 @@ def main() -> int:
     if not sayilar:
         print("sayilar/ boş", file=sys.stderr)
         return 1
-    sayilar.sort(key=lambda s: s["tarih"], reverse=True)
+    sayilar.sort(key=lambda s: s["tarih"])
+    for no, s in enumerate(sayilar, 1):
+        s["sayi"] = no  # sayı numarası tarih sırasından gelir
+    sayilar.reverse()
     (KOK / "sayi").mkdir(exist_ok=True)
     for s in sayilar:
         (KOK / "sayi" / f"{s['tarih']}.html").write_text(sayi_sayfasi(s, "../"), encoding="utf-8")
