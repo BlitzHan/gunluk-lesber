@@ -88,13 +88,18 @@ def piyasa(s: dict) -> str:
     if not s.get("piyasa"):
         return ""
     hucreler = "".join(
-        f'<div class="hucre"><span class="p-ad">{e(p["ad"])}</span>'
+        f'<div class="hucre"><span class="p-ad"{dil(p["ad"])}>{e(p["ad"])}</span>'
         f'<span class="p-deger">{e(p["deger"])}</span>'
         f'<span class="p-degisim {yon(p.get("degisim", ""))}">{e(p.get("degisim", ""))}</span></div>'
         for p in s["piyasa"])
     not_ = f'<p class="p-not">{e(s["piyasa_not"])}</p>' if s.get("piyasa_not") else ""
     return (f'<section class="piyasa" aria-label="Piyasa"><div class="p-baslik">Piyasa</div>{hucreler}</section>'
             f'{not_}')
+
+
+def dil(ad: str) -> str:
+    """Yabancı adlar Türkçe büyük harfe çevrilmesin (BİTCOİN olmasın)."""
+    return ' lang="en"' if ad in ("Bitcoin",) else ""
 
 
 def yon(degisim: str) -> str:
