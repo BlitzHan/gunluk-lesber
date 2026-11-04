@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Günlük Leşber · Arşiv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div class="olcek">
+<div class="kagit-kap">
+<div class="kagit">
+
+<header class="kunye">
+  <div class="kunye-ust">
+    <span>Yıl 1 · Sayı 1</span>
+    <span>4 Kasım 2026 Çarşamba</span>
+    <span>Ücretsizdir · Sponsoru yoktur</span>
+  </div>
+  <h1 class="ad"><a href="index.html">Günlük Leşber</a></h1>
+  <div class="kunye-alt">
+    <span>YATİYAD'ın gayriresmî yayın organıdır</span>
+    <span class="slogan">Gün altın, gün gümüş</span>
+  </div>
+</header><section class="arsiv"><h2>Eski Sayılar</h2><ul><li><a href="sayi/2026-11-04.html"><span class="a-tarih">4 Kasım 2026 Çarşamba</span><span class="a-manset">TACO gitti, VETO geldi</span></a></li></ul></section>
+</div>
+</div>
+</div>
+<nav class="olcek-cubugu" aria-label="Sayfa boyutu">
+  <span>Boyut</span>
+  <button type="button" data-z="1">%100</button>
+  <button type="button" data-z="0.75">%75</button>
+  <button type="button" data-z="0.5">%50</button>
+</nav>
+<script>
+(function () {
+  var anahtar = "lesber-olcek";
+  var dugmeler = document.querySelectorAll(".olcek-cubugu button");
+  function uygula(z) {
+    document.documentElement.style.setProperty("--z", z);
+    dugmeler.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.z === z)); });
+  }
+  var z = "1";
+  try { z = localStorage.getItem(anahtar) || "1"; } catch (e) {}
+  uygula(z);
+  dugmeler.forEach(function (b) {
+    b.addEventListener("click", function () {
+      uygula(b.dataset.z);
+      try { localStorage.setItem(anahtar, b.dataset.z); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
