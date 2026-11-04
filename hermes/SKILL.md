@@ -22,7 +22,8 @@ Repo: `/root/gunluk-lesber` (GitHub: BlitzHan/gunluk-lesber). Tasarım sabit; se
    - `VIDEO_YOK`, `ZATEN_YAYINLANDI`, `ALTYAZI_HAZIR_DEGIL` → yalnızca `[SILENT]` yaz, başka hiçbir şey yapma.
    - `SON_DENEME_BASARISIZ` → tek satır yaz: "Günlük Leşber: bugünün yayınının altyazısı gelmedi, sayı çıkmadı." ve bitir.
    - `HAZIR` → devam et.
-2. Altyazıyı baştan sona oku. Konuları çıkar, her konunun başladığı `[dk:sn]` işaretini not et.
+2. Önce örnek sayıyı oku: `/root/gunluk-lesber/sayilar/2026-11-04.json`. Tonu, uzunluğu, alıntı sıklığını ondan al
+   (içeriğini kopyalama). Sonra altyazıyı baştan sona oku. Konuları çıkar, her konunun başladığı `[dk:sn]` işaretini not et.
 3. `YAZILACAK DOSYA` yoluna aşağıdaki biçimde JSON yaz (dosya yazma aracıyla).
 4. Terminalde çalıştır: `python3 /root/gunluk-lesber/arac/yayinla.py <TARIH>`
    - `DENETİM GEÇMEDİ` derse listelenen her hatayı düzelt: rakamı altyazıdaki haline getir ya da cümleden çıkar;
@@ -37,7 +38,7 @@ Repo: `/root/gunluk-lesber` (GitHub: BlitzHan/gunluk-lesber). Tasarım sabit; se
 • <haber başlığı>
 • <haber başlığı>
 • <haber başlığı>
-https://blitzhan.github.io/gunluk-lesber/
+https://blitzhan.github.io/gunluk-lesber/sayi/<TARIH>.html
 ```
 
 Yayınlanamadıysa ilk satıra `[CRON_FAILURE]` koy ve kısa sebebi yaz.
@@ -54,6 +55,13 @@ Yayınlanamadıysa ilk satıra `[CRON_FAILURE]` koy ve kısa sebebi yaz.
 - **Bariz altyazı hataları** yalnız özel isimlerde düzeltilebilir (ör. "tunik" → TÜİK, "SFK" → SPK). Emin değilsen o ismi kullanma.
 - **Üslup onun üslubu:** Başlıklar kısa ve çarpıcı, onun deyimleriyle ("gidirik oldu", "leşber", "hava hadisleri").
   Haber metni sade gazete Türkçesi, araya onun sözleri tırnakla girer. Kendini anlatma, okura seslenme.
+- **Canlı yaz, tekrar etme:** "Çiçek'in aktardığına göre" kalıbını bir haberde en fazla bir kez kullan.
+  Her haberde ve manşette en az bir doğrudan alıntı (tırnak içinde onun sözü) olsun; tadı alıntılardan gelir.
+- **Başlıklar** cümle düzeninde yazılır ("Altın 4.000 dolara dayandı"), her kelime büyük harfle başlamaz.
+- **Alan değerine etiket yazma:** `ust` alanına "Sürmanşet:" gibi bir şey ekleme, yalnız metni yaz.
+- **Piyasa değerleri birimli olsun:** "50,74 $", "6.400+ TL", "≈85 TL". Birimini bilmediğin değeri yazma.
+- **Köşe** en az 3 paragraf ve 150 kelime: o günkü kişisel anlatısından (hedefleri, alışkanlıkları, anıları, kedileri),
+  onun ağzından. Yayında kişisel bir şey yoksa en uzun kendi yorum bölümünü birinci şahıs derle.
 - **Yatırım tavsiyesi verme.** Altın, fon, borsa görüşleri "Çiçek'e göre" diye aktarılır.
 - Kişilere ya da gruplara yönelik etnik, dini laf sokmalarını alma; siyasi eleştiri kalabilir.
 - Yayın içi küçük anlar (kıyafeti, masadaki eşya) haber yapılmaz; istersen "kisa"ya bir madde olarak girer.
@@ -73,8 +81,8 @@ Bütün metinler Türkçe. `zaman` o konunun videoda başladığı an (`dk:sn` y
   ],
   "manset": {
     "video": "...", "zaman": "02:06",
-    "ust": "Sürmanşet: 3-6 kelime",
-    "baslik": "Manşet: 2-6 kelime, büyük harfe çevrilecek",
+    "ust": "3-6 kelimelik üst başlık",
+    "baslik": "2-6 kelimelik manşet (sayfada büyük harfe çevrilir)",
     "spot": "Bir cümle, içinde onun bir sözü tırnakla olabilir.",
     "metin": ["3-4 paragraf, her biri en çok 70 kelime"]
   },

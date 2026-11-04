@@ -52,7 +52,7 @@ def main() -> int:
     if itme.returncode != 0:
         print("GitHub'a yüklenemedi:\n" + itme.stderr)
         return 1
-    print(f"YAYINDA: {SITE} (sayfa 1-2 dakikada güncellenir)")
+    print(f"YAYINDA: {SITE}sayi/{tarih}.html (sayfa 1-2 dakikada güncellenir)")
     return 0
 
 
